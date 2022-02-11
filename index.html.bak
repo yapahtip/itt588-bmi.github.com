@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Welcome</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fas fa-heartbeat"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>BMI CALCULATOR</h1>
+								<tr>
+									<td class="td">Underweight :</td>
+									<td>&lt;18.5</td>
+								</tr></br>
+								<tr>
+									<td class="td">Normal Weight :</td>
+									<td>18.5-24.9</td>
+								</tr></br>
+								<tr>
+									<td class="td">Overweight :</td>
+									<td>25-29.9</td>
+								</tr></br>
+								<tr>
+									<td class="td">Obese :</td>
+									<td>30-39.9</td>
+								</tr></br>
+								<tr>
+									<td class="td">Morbidly Obese :</td>
+									<td>&gt;40</td>
+								</tr></br>
+								
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">cALCULATOR</a></li>
+								<!-- <li><a href="#work">Work</a></li> -->
+								<li><a href="#about">About</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!-- <li><a href="#dev">Dev</a></li> -->
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">BMI Calculator in Meters</h2>
+				
+								<form name="calBMI">
+								<a href="#work">
+									<input class="decoration-one px-3 py-2" type="button" onClick="href='#work'" value="Change to CM" />
+								</a><br /><br/>
+
+									<div class="field half first">
+									<input type="text" name="weight" placeholder="Enter Weight (kg)" size="20"><br /><br/>
+									</div>
+									<div class="field half">
+									<input type="text" name="height" placeholder="Enter Height (Meters)" size="20"><br /><br/>
+									</div>
+									<input class="decoration-one px-3 py-2" type="reset" value="Reset" />
+									<input class="special" type="button" value="Calculate BMI" onClick="calculateBmi()"><br /><br/>
+									
+									
+									<label for="name">BMI Value</label>
+									<input type="text" name="bmi" placeholder="Your BMI value will be here" size="20" disabled><br /><br/>
+									<label for="name">Meaning</label>
+									<input type="text" name="meaning" placeholder="BMI Meaning will be here" size="35"  disabled><br /><br/>
+									<label for="name">Risk</label>
+									<input type="text" name="risk" placeholder="BMI Risk will be here" size="35" disabled><br /><br/>
+									
+								</form>
+							
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">BMI Calculator in CM</h2>
+								<form name="calBMI2">
+								<a href="#intro">
+									<input class="decoration-one px-3 py-2" type="button" onClick="href='#work'" value="Change to Meters" />
+								</a><br /><br/>
+								
+									<div class="field half first">
+									<input type="text" name="weight" placeholder="Enter Weight (kg)" size="20"><br /><br/>
+									</div>
+									<div class="field half">
+									<input type="text" name="height" placeholder="Enter Height (Centimeters)" size="20"><br /><br/>
+									</div>
+									<input class="decoration-one px-3 py-2" type="reset" value="Reset" />
+									<input class="special" type="button" value="Calculate BMI" onClick="calculateBmi2()"><br /><br/>
+									
+									
+									<label for="name">BMI Value</label>
+									<input type="text" name="bmi" placeholder="Your BMI value will be here" size="20" disabled><br /><br/>
+									<label for="name">Meaning</label>
+									<input type="text" name="meaning" placeholder="BMI Meaning will be here" size="35"  disabled><br /><br/>
+									<label for="name">Risk</label>
+									<input type="text" name="risk" placeholder="BMI Risk will be here" size="35" disabled><br /><br/>
+									
+								</form>
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About BMI</h2>
+								<p>BMI is used by healthcare professionals to screen for overweight and obese individuals.The BMI is used to assess a person’s health risks associated with obesity and overweight.BMI, more often than not, correlates with total body fat. This means that as the BMI score increases, so does a person’s total body fat.BMI is used by healthcare professionals to screen for overweight and obese individuals. The BMI is used to assess a person’s health risks associated with obesity and overweight.</p><br />
+
+								
+							</article>
+							<!-- Dev -->
+							<article id="dev">
+								<h2 class="major">Our Developer</h2>
+								<span class="image main"><img src="images/atip.jfif" alt=""  />MUHAMMAD 'ATIF BIN ABDUL RAHIM - 2021110669</span>
+								<span class="image main"><img src="images/zara.jfif" alt="" />NUR ZAHIRAH IZZATI BINTI MOHD ZAHIR - 2021119921</span>
+								<span class="image main"><img src="images/haziq.jfif" alt="" />MUHAMMAD HAZIQ KHAN BIN TAIB KHAN - 2021102807</span>
+								
+								
+								
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="#">
+									<div class="field half first">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#dev" type="button""><span class="label">Dev</span></a></li>
+									
+								</ul>
+							</article>
+
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!-- <p class="copyright">&copy; UiTM. ITT588: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
+						<p class="copyright">&copy; UiTM. ITT588:GROUP ASSIGNMENT <a href="https://github.com/">GitHub</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function calculateBmi() {
+				var weight = document.calBMI.weight.value
+				var height = document.calBMI.height.value
+				if(weight > 0 && height > 0){	
+				var finalBmi = weight/(height*height)
+				document.calBMI.bmi.value = finalBmi.toFixed(3);
+				if(finalBmi < 18.4){
+				document.calBMI.meaning.value = "Underweight"
+				document.calBMI.risk.value = "Malnutrition risk"
+					}
+				if(finalBmi > 18.5 && finalBmi < 25){
+				document.calBMI.meaning.value = "Normal weight"
+				document.calBMI.risk.value = "Low risk"
+					}
+				if(finalBmi > 25 &&  finalBmi <30){
+					document.calBMI.meaning.value = "Overweight"
+				document.calBMI.risk.value = "Enhanced risk"
+					}
+				if(finalBmi > 30 && finalBmi<34.9){
+				document.calBMI.meaning.value = "Moderately obese"
+				document.calBMI.risk.value = "Medium risk"
+					}
+				if(finalBmi > 35 && finalBmi<39.9){
+				document.calBMI.meaning.value = "Severely obese"
+				document.calBMI.risk.value = "High risk"
+					}
+				if(finalBmi > 40){
+				document.calBMI.meaning.value = "Very severely obese"
+				document.calBMI.risk.value = "Very high risk"
+					}
+					}
+				else{
+					alert("Data you've entered might be incorrect. Please check and try again.")
+					}
+
+				}
+			</script>
+			<!-- CALCULATE FOR CM -->
+			<script>
+				function calculateBmi2() {
+				var weight = document.calBMI2.weight.value
+				var height = document.calBMI2.height.value/100
+				if(weight > 0 && height > 0){	
+				var finalBmi = weight/(height*height)
+				document.calBMI2.bmi.value = finalBmi.toFixed(3);
+				if(finalBmi < 18.4){
+				document.calBMI2.meaning.value = "Underweight"
+				document.calBMI2.risk.value = "Malnutrition risk"
+					}
+				if(finalBmi > 18.5 && finalBmi < 25){
+				document.calBMI2.meaning.value = "Normal weight"
+				document.calBMI2.risk.value = "Low risk"
+					}
+				if(finalBmi > 25 &&  finalBmi <30){
+					document.calBMI2.meaning.value = "Overweight"
+				document.calBMI2.risk.value = "Enhanced risk"
+					}
+				if(finalBmi > 30 && finalBmi<34.9){
+				document.calBMI2.meaning.value = "Moderately obese"
+				document.calBMI2.risk.value = "Medium risk"
+					}
+				if(finalBmi > 35 && finalBmi<39.9){
+				document.calBMI2.meaning.value = "Severely obese"
+				document.calBMI2.risk.value = "High risk"
+					}
+				if(finalBmi > 40){
+				document.calBMI2.meaning.value = "Very severely obese"
+				document.calBMI2.risk.value = "Very high risk"
+					}
+					}
+				else{
+					alert("Data you've entered might be incorrect. Please check and try again.")
+					}
+
+				}
+			</script>
+
+	</body>
+	
+
+</html>
